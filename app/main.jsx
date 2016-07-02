@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Nav } from './components/nav/nav.component.jsx';
-import { Content } from './components/content/content.component.jsx';
+import { Content } from './components/content.component.jsx';
 
 export class Main extends React.Component {
 

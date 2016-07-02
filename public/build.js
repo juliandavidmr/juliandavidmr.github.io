@@ -61,9 +61,9 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _navComponent = __webpack_require__(174);
+	var _navComponent = __webpack_require__(170);
 
-	var _contentComponent = __webpack_require__(175);
+	var _contentComponent = __webpack_require__(172);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21052,11 +21052,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21071,8 +21067,6 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _liComponent = __webpack_require__(176);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21091,32 +21085,8 @@
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Nav).call(this, props));
 
 	    _this.state = {
-	      name: 'Maps for Ionic v2 TypeScript',
-	      menu_li: [{
-	        title: 'Code',
-	        description: 'Source Code TypeScript',
-	        href: '',
-	        active: false,
-	        id: '1'
-	      }, {
-	        title: 'About',
-	        description: 'Source Code TypeScript',
-	        href: '#about',
-	        active: false,
-	        id: '2'
-	      }, {
-	        title: 'Home',
-	        description: 'Source Code TypeScript',
-	        href: '#home',
-	        active: true,
-	        id: '3'
-	      }, {
-	        title: 'Contact',
-	        description: 'Source Code TypeScript',
-	        href: '#contact',
-	        active: false,
-	        id: '4'
-	      }]
+	      title: '@anlijudavid',
+	      subtitle: 'Backend & Frontend'
 	    };
 	    return _this;
 	  }
@@ -21125,60 +21095,79 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'nav',
-	        { className: 'navbar navbar-default navbar-fixed-top' },
+	        'div',
+	        null,
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'container' },
+	          { className: 'container-fluid banner text-center', id: 'banner' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'navbar-header' },
+	            { className: 'row' },
 	            _react2.default.createElement(
-	              'button',
-	              { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#navbar', 'aria-expanded': 'false', 'aria-controls': 'navbar' },
+	              'div',
+	              { className: 'col-md-12 line' },
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'sr-only' },
-	                'Toggle navigation'
+	                'div',
+	                { className: 'tablebox' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'banner-text', id: 'bannertext' },
+	                  _react2.default.createElement(
+	                    'h1',
+	                    { className: 'hostyle', id: 'heads' },
+	                    this.state.title
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'pstyle' },
+	                    this.state.subtitle
+	                  ),
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#features', className: 'page-scroll arrow' },
+	                    _react2.default.createElement('i', { className: 'fa fa-angle-down' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'navbar menubar', id: 'menu' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'navbar-header' },
+	              _react2.default.createElement(
+	                'button',
+	                { type: 'button', className: 'navbar-toggle menu-button', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+	                _react2.default.createElement('span', { className: 'glyphicon glyphicon-align-justify' })
 	              ),
-	              _react2.default.createElement('span', { className: 'icon-bar' }),
-	              _react2.default.createElement('span', { className: 'icon-bar' }),
-	              _react2.default.createElement('span', { className: 'icon-bar' })
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'navbar-brand logo', href: '#' },
+	                'Code'
+	              )
 	            ),
 	            _react2.default.createElement(
-	              'a',
-	              { className: 'navbar-brand', href: '#' },
-	              this.state.name
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'navbar', className: 'collapse navbar-collapse' },
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'nav navbar-nav' },
-	              this.state.menu_li.map(function (item) {
-	                return _react2.default.createElement(_liComponent.Li, { href: item.href, title: item.title, key: item.id, active: item.active });
-	              }),
+	              'div',
+	              null,
 	              _react2.default.createElement(
-	                'li',
-	                { className: 'dropdown' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: '#', className: 'dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
-	                  'Dropdown ',
-	                  _react2.default.createElement('span', { className: 'caret' })
-	                ),
+	                'nav',
+	                { className: 'collapse navbar-collapse', id: 'myNavbar', role: 'navigation' },
 	                _react2.default.createElement(
 	                  'ul',
-	                  { className: 'dropdown-menu' },
+	                  { className: 'nav navbar-nav navbar-right navstyle' },
 	                  _react2.default.createElement(
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
 	                      'a',
-	                      { href: '#' },
-	                      'Action'
+	                      { href: '#banner', className: 'page-scroll active' },
+	                      'Home'
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -21186,8 +21175,8 @@
 	                    null,
 	                    _react2.default.createElement(
 	                      'a',
-	                      { href: '#' },
-	                      'Another action'
+	                      { href: '#features', className: 'page-scroll' },
+	                      'Features'
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -21195,23 +21184,8 @@
 	                    null,
 	                    _react2.default.createElement(
 	                      'a',
-	                      { href: '#' },
-	                      'Something else here'
-	                    )
-	                  ),
-	                  _react2.default.createElement('li', { role: 'separator', className: 'divider' }),
-	                  _react2.default.createElement(
-	                    'li',
-	                    { className: 'dropdown-header' },
-	                    'Nav header'
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      'a',
-	                      { href: '#' },
-	                      'Separated link'
+	                      { href: '#gallery', className: 'page-scroll' },
+	                      'Gallery'
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -21219,8 +21193,26 @@
 	                    null,
 	                    _react2.default.createElement(
 	                      'a',
-	                      { href: '#' },
-	                      'One more separated link'
+	                      { href: '#about', className: 'page-scroll' },
+	                      'About'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#testimonials', className: 'page-scroll' },
+	                      'Testimonials'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#contact', className: 'page-scroll' },
+	                      'Contact'
 	                    )
 	                  )
 	                )
@@ -21236,10 +21228,11 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 175 */
+/* 171 */,
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21251,6 +21244,16 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _featuresComponent = __webpack_require__(173);
+
+	var _noteComponent = __webpack_require__(175);
+
+	var _aboutComponent = __webpack_require__(176);
+
+	var _footerComponent = __webpack_require__(177);
+
+	var _subscribeComponent = __webpack_require__(178);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21270,9 +21273,17 @@
 	  }
 
 	  _createClass(Content, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement("div", { className: "container" });
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_featuresComponent.Features, null),
+	        _react2.default.createElement(_noteComponent.Note, null),
+	        _react2.default.createElement(_aboutComponent.About, null),
+	        _react2.default.createElement(_subscribeComponent.Subscribe, null),
+	        _react2.default.createElement(_footerComponent.Footer, null)
+	      );
 	    }
 	  }]);
 
@@ -21280,7 +21291,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 176 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21288,7 +21299,70 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Li = undefined;
+	exports.Features = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _featureComponent = __webpack_require__(174);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Features = exports.Features = function (_React$Component) {
+	  _inherits(Features, _React$Component);
+
+	  function Features(props) {
+	    _classCallCheck(this, Features);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Features).call(this, props));
+	  }
+
+	  _createClass(Features, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'features', id: 'features' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(_featureComponent.Feature, {
+	              titulo: 'Creando Ideas',
+	              resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut,' }),
+	            _react2.default.createElement(_featureComponent.Feature, {
+	              titulo: 'Save Time',
+	              resume: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut,' })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Features;
+	}(_react2.default.Component);
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Feature = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -21304,31 +21378,506 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Li = exports.Li = function (_React$Component) {
-	  _inherits(Li, _React$Component);
+	var Feature = exports.Feature = function (_React$Component) {
+	  _inherits(Feature, _React$Component);
 
-	  function Li(props) {
-	    _classCallCheck(this, Li);
+	  function Feature(props) {
+	    _classCallCheck(this, Feature);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Li).call(this, props));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Feature).call(this, props));
 	  }
 
-	  _createClass(Li, [{
-	    key: 'render',
+	  _createClass(Feature, [{
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'li',
-	        { className: this.props.active ? 'active' : '' },
+	        "div",
+	        { className: "col-md-6 col-sm-6 col-xs-12 featurebox" },
 	        _react2.default.createElement(
-	          'a',
-	          { href: '{this.props.href}' },
-	          this.props.title
+	          "div",
+	          { className: "fh-desc" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            this.props.titulo
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            this.props.resume
+	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return Li;
+	  return Feature;
+	}(_react2.default.Component);
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Note = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Note = exports.Note = function (_React$Component) {
+	  _inherits(Note, _React$Component);
+
+	  function Note(props) {
+	    _classCallCheck(this, Note);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Note).call(this, props));
+	  }
+
+	  _createClass(Note, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "notes" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-9 col-sm-10 col-12" },
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut, luctus feugiat ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante."
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-3 col-sm-2 col-xs-12 text-center" },
+	              _react2.default.createElement(
+	                "button",
+	                null,
+	                "Click"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Note;
+	}(_react2.default.Component);
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.About = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var About = exports.About = function (_React$Component) {
+	  _inherits(About, _React$Component);
+
+	  function About(props) {
+	    _classCallCheck(this, About);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(About).call(this, props));
+	  }
+
+	  _createClass(About, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "about", id: "about" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-12 col-sm-12 col-xs-12" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "alldesc" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "col-md-6 col-sm-6 col-xs-12 centertext" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "all-td" },
+	                    "What You Want To Know"
+	                  ),
+	                  _react2.default.createElement(
+	                    "h2",
+	                    null,
+	                    "About Us"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "col-md-6 col-sm-6 col-xs-12" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "desc" },
+	                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut, luctus feugiat ipsum. Lorem ipsum dolor sit amet."
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-12 col-sm-12 col-xs-12" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "progresscount" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "col-md-6 col-sm-6 col-xs-12" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "col-md-6 col-sm-6 col-xs-6 block" },
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "counter-item" },
+	                      _react2.default.createElement(
+	                        "h5",
+	                        null,
+	                        "Our Clients"
+	                      ),
+	                      _react2.default.createElement("div", { className: "timer", "data-from": "0", "data-to": "55", "data-speed": "5000", "data-refresh-interval": "50" })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "col-md-6 col-sm-6 col-xs-6" },
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "counter-item" },
+	                      _react2.default.createElement(
+	                        "h5",
+	                        null,
+	                        "Projects completed"
+	                      ),
+	                      _react2.default.createElement("div", { className: "timer", "data-from": "0", "data-to": "88", "data-speed": "5000", "data-refresh-interval": "50" })
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "col-md-6 col-sm-6 col-xs-12" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "progresstitle" },
+	                    _react2.default.createElement(
+	                      "h5",
+	                      null,
+	                      "HTML5"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "progress progress-style" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: "progress-bar progress-bar-striped", role: "progressbar", "aria-valuenow": "80", "aria-valuemin": "0", "aria-valuemax": "100", style: { "width": "80%" } },
+	                        " 80% "
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "progresstitle" },
+	                    _react2.default.createElement(
+	                      "h5",
+	                      null,
+	                      "ReactJS"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "progress progress-style" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: "progress-bar progress-bar-striped", role: "progressbar", "aria-valuenow": "74", "aria-valuemin": "0", "aria-valuemax": "100", style: { "width": "60%" } },
+	                        " 60% "
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "progresstitle" },
+	                    _react2.default.createElement(
+	                      "h5",
+	                      null,
+	                      "AngularJS 1 & AngularJS 2"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "progress progress-style" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: "progress-bar progress-bar-striped", role: "progressbar", "aria-valuenow": "65", "aria-valuemin": "0", "aria-valuemax": "100", style: { "width": "85%" } },
+	                        " 85% "
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "progresstitle" },
+	                    _react2.default.createElement(
+	                      "h5",
+	                      null,
+	                      "NodeJS"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "progress progress-style" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: "progress-bar progress-bar-striped", role: "progressbar", "aria-valuenow": "65", "aria-valuemin": "0", "aria-valuemax": "100", style: { "width": "95%" } },
+	                        " 95% "
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "progresstitle" },
+	                    _react2.default.createElement(
+	                      "h5",
+	                      null,
+	                      "Databases: NoSQL & SQL"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "progress progress-style" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: "progress-bar progress-bar-striped", role: "progressbar", "aria-valuenow": "65", "aria-valuemin": "0", "aria-valuemax": "100", style: { "width": "90%" } },
+	                        " 90% "
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return About;
+	}(_react2.default.Component);
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Footer = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = exports.Footer = function (_React$Component) {
+	  _inherits(Footer, _React$Component);
+
+	  function Footer(props) {
+	    _classCallCheck(this, Footer);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).call(this, props));
+	  }
+
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', null);
+	    }
+	  }]);
+
+	  return Footer;
+	}(_react2.default.Component);
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Subscribe = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Subscribe = exports.Subscribe = function (_React$Component) {
+	  _inherits(Subscribe, _React$Component);
+
+	  function Subscribe(props) {
+	    _classCallCheck(this, Subscribe);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Subscribe).call(this, props));
+	  }
+
+	  _createClass(Subscribe, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "subscribe-social" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-8 col-sm-12 col-xs-12" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "subscibe" },
+	                _react2.default.createElement(
+	                  "form",
+	                  { role: "form" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "col-md-8 col-sm-10 col-xs-12" },
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "form-group" },
+	                      _react2.default.createElement("input", { type: "email", className: "form-control", id: "email", placeholder: "Enter Your Email address" })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "col-md-4 col-sm-2 col-xs-12 centertext" },
+	                    _react2.default.createElement(
+	                      "button",
+	                      { type: "submit", className: "btn btn-or" },
+	                      "Subscibe"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-4 col-sm-12 col-xs-12 text-center" },
+	              _react2.default.createElement(
+	                "ul",
+	                { className: "social" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    _react2.default.createElement("i", { className: "fa fa-twitter-square" })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    _react2.default.createElement("i", { className: "fa fa-facebook-square" })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    _react2.default.createElement("i", { className: "fa fa-google-plus-square" })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    _react2.default.createElement("i", { className: "fa fa-linkedin-square" })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Subscribe;
 	}(_react2.default.Component);
 
 /***/ }
