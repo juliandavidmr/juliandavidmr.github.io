@@ -61,8 +61,8 @@ export class Content extends React.Component {
         </div>
         <div className="badgescard">
           {
-            this.state.skills.map((skill) => {
-              return <Note icon={skill.icon} title={skill.title} />;
+            this.state.skills.map((skill, i) => {
+              return <Note key={i} icon={skill.icon} title={skill.title} />;
             })
           }          
         </div>

@@ -21681,8 +21681,8 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'badgescard' },
-	          this.state.skills.map(function (skill) {
-	            return _react2.default.createElement(_noteComponent.Note, { icon: skill.icon, title: skill.title });
+	          this.state.skills.map(function (skill, i) {
+	            return _react2.default.createElement(_noteComponent.Note, { key: i, icon: skill.icon, title: skill.title });
 	          })
 	        )
 	      );
