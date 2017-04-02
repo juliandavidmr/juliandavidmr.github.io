@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Nav } from './components/nav/nav.component.jsx';
 import { Content } from './components/content.component.jsx';
 
 export class Main extends React.Component {
@@ -15,33 +14,30 @@ export class Main extends React.Component {
   }
 
   //Antes de montar el componente
-  componentWillMount(){
+  componentWillMount() {
     console.log('Before mount...');
   }
 
   //Despues de montar el componente
-  componentDidMount(){
+  componentDidMount() {
     console.log('Mount');
   }
 
   //Se invocará antes del render, justo antes que tu componente se haya actualizado (recibiendo nuevas props o state).
-  componentWillUpdate(){
+  componentWillUpdate() {
     console.log('Update MyComponent');
   }
 
   //Se invoca inmediatamente después del render, justo cuando tu componente a cambiado.
-  componentDidUpdate(prevProps,prevState) {
+  componentDidUpdate(prevProps, prevState) {
     console.log('prevPros or prevState');
   }
 
   render() {
-    return(
-      <div>
-        <Nav />
-        <Content />
-      </div>
+    return (
+      <Content />
     )
   }
 }
 
-ReactDOM.render(<Main />, document.getElementById('container'));
+ReactDOM.render(<Main />, document.getElementById('app'));
