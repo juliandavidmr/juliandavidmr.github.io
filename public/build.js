@@ -21674,6 +21674,73 @@
 	                'p',
 	                { className: 'bio' },
 	                this.state.bio
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                  'button',
+	                  { className: 'btn' },
+	                  _react2.default.createElement(
+	                    'span',
+	                    null,
+	                    'Profiles'
+	                  ),
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'material-icons' },
+	                    'public'
+	                  ),
+	                  _react2.default.createElement(
+	                    'ul',
+	                    { className: 'dropdown' },
+	                    _react2.default.createElement(
+	                      'li',
+	                      { className: 'active' },
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://www.npmjs.com/~anlijudavid' },
+	                        'NPM'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://twitter.com/anlijudavid' },
+	                        'Twitter'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/juliandavidmr' },
+	                        'Github'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://medium.com/@anlijudavid' },
+	                        'Medium'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'li',
+	                      null,
+	                      _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow' },
+	                        'Youtube'
+	                      )
+	                    )
+	                  )
+	                )
 	              )
 	            )
 	          )

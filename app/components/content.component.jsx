@@ -56,6 +56,29 @@ export class Content extends React.Component {
               <h1>{this.state.name}</h1>
               <h3>{this.state.sub}</h3>
               <p className="bio">{this.state.bio}</p>
+
+              <div className="container">
+                <button className="btn"><span>Profiles</span><i className="material-icons">public</i>
+                  <ul className="dropdown">
+                    <li className="active">
+                      <a href="https://www.npmjs.com/~anlijudavid">NPM</a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/anlijudavid">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/juliandavidmr">Github</a>
+                    </li>
+                    <li>
+                      <a href="https://medium.com/@anlijudavid">Medium</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow">Youtube</a>
+                    </li>
+                  </ul>
+                </button>
+              </div>
+
             </div>
           </div>
         </div>
@@ -64,7 +87,7 @@ export class Content extends React.Component {
             this.state.skills.map((skill, i) => {
               return <Note key={i} icon={skill.icon} title={skill.title} />;
             })
-          }          
+          }
         </div>
       </div>
     );
