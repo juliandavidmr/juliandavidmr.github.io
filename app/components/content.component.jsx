@@ -61,19 +61,19 @@ export class Content extends React.Component {
                 <button className="btn"><span>Profiles</span><i className="material-icons">public</i>
                   <ul className="dropdown">
                     <li className="active">
-                      <a href="https://www.npmjs.com/~anlijudavid">NPM</a>
+                      <a href="https://www.npmjs.com/~anlijudavid" target="blank">NPM</a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/anlijudavid">Twitter</a>
+                      <a href="https://twitter.com/anlijudavid" target="blank">Twitter</a>
                     </li>
                     <li>
-                      <a href="https://github.com/juliandavidmr">Github</a>
+                      <a href="https://github.com/juliandavidmr" target="blank">Github</a>
                     </li>
                     <li>
-                      <a href="https://medium.com/@anlijudavid">Medium</a>
+                      <a href="https://medium.com/@anlijudavid" target="blank">Medium</a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow">Youtube</a>
+                      <a href="https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow" target="blank">Youtube</a>
                     </li>
                   </ul>
                 </button>

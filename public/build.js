@@ -21699,7 +21699,7 @@
 	                      { className: 'active' },
 	                      _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://www.npmjs.com/~anlijudavid' },
+	                        { href: 'https://www.npmjs.com/~anlijudavid', target: 'blank' },
 	                        'NPM'
 	                      )
 	                    ),
@@ -21708,7 +21708,7 @@
 	                      null,
 	                      _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://twitter.com/anlijudavid' },
+	                        { href: 'https://twitter.com/anlijudavid', target: 'blank' },
 	                        'Twitter'
 	                      )
 	                    ),
@@ -21717,7 +21717,7 @@
 	                      null,
 	                      _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://github.com/juliandavidmr' },
+	                        { href: 'https://github.com/juliandavidmr', target: 'blank' },
 	                        'Github'
 	                      )
 	                    ),
@@ -21726,7 +21726,7 @@
 	                      null,
 	                      _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://medium.com/@anlijudavid' },
+	                        { href: 'https://medium.com/@anlijudavid', target: 'blank' },
 	                        'Medium'
 	                      )
 	                    ),
@@ -21735,7 +21735,7 @@
 	                      null,
 	                      _react2.default.createElement(
 	                        'a',
-	                        { href: 'https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow' },
+	                        { href: 'https://www.youtube.com/channel/UCeEhXVnKGpC4jxYNE5gKAow', target: 'blank' },
 	                        'Youtube'
 	                      )
 	                    )
