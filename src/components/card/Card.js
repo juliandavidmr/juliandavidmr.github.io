@@ -19,6 +19,9 @@ export default class extends React.Component {
         icon: require("../../fontawesome/svgs/brands/github.svg"),
         link: 'https://github.com/juliandavidmr'
       }, {
+        icon: require("../../fontawesome/svgs/brands/twitter.svg"),
+        link: 'https://twitter.com/anlijudavid'
+      }, {
         icon: require("../../fontawesome/svgs/brands/medium.svg"),
         link: 'https://medium.com/@anlijudavid'
       }, {
