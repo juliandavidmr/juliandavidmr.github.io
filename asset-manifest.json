@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1444ea33.chunk.css",
+    "main.js": "/static/js/main.3f21b233.chunk.js",
+    "main.js.map": "/static/js/main.3f21b233.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1ea698e000534492d7b534174e28b532.js": "/precache-manifest.1ea698e000534492d7b534174e28b532.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1444ea33.chunk.css.map": "/static/css/main.1444ea33.chunk.css.map",
+    "static/media/facebook.svg": "/static/media/facebook.8c856a6a.svg",
+    "static/media/index.scss": "/static/media/forest-patrol.8c9c4f9d.jpg",
+    "static/media/github.svg": "/static/media/github.f5a069d2.svg",
+    "static/media/instagram.svg": "/static/media/instagram.6f7f616f.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.48a2133d.svg",
+    "static/media/medium.svg": "/static/media/medium.f1c256ef.svg",
+    "static/media/npm.svg": "/static/media/npm.07b3134c.svg"
+  }
+}
